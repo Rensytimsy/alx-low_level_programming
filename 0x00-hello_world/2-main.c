@@ -1,5 +1,5 @@
 #include<stdio.h>
 int main(void){
-  printf("holberton school");
+  printf("Holberton School");
   return(0);
 }
