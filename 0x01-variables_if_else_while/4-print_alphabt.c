@@ -3,7 +3,7 @@
  * main - is the start point of the program
  *Return: 0 (Success)
  */
-int main()
+int main(void)
 {
 char alph;
 for (alph = 'a'; alph <= 'z'; alph++)
