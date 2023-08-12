@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <unistd.h>  // Include this header for STDOUT_FILENO
+#include <unistd.h>  
 
 /**
  * main - Entry point
@@ -7,7 +7,8 @@
  */
 int main(void)
 {
-    write(STDOUT_FILENO, "and that piece of art is useful"
-                           " - Dora Korpar, 2015-10-19\n", 59);
+    write(2,
+	      "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
+	      59);
     return (1);
 }
