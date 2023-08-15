@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+#include <main.h>
 /**
  * main - is the start point of our programm
  * Return: 0 Success
