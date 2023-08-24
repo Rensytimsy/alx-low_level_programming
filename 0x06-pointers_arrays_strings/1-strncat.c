@@ -1,5 +1,11 @@
 #include "main.h"
-
+/**
+ * _strncat - is a function
+ * @dest: are parametres
+ * @src: are parametre
+ * @n:int value
+ * Return: (concat string)
+ */
 char *_strncat(char *dest, char *src, int n)
 {
 int a, b;
