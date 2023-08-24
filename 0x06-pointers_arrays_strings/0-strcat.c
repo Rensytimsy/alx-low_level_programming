@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <string.h>
 /**
  * _strcat - is our main function
  * @dest: a string parameter.
@@ -8,14 +9,7 @@
  */
 char *_strcat(char *dest, char *src)
 {
-int i, j;
-for (i = 0; dest[i] != '\0'; i++);
-for (j = 0; src[j] != '\0'; j++)
-{
-dest[i] = src[j];
-i++;
-}
-dest[i] = '\0';
+strcat(dest, src);
 printf("%s\n", dest);
 return (0);
 }
