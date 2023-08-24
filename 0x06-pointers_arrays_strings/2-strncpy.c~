@@ -1,0 +1,21 @@
+#include "main.h"
+#include <stdio.h>
+/**
+ *_strncpy - this is the main function
+ *@dest: this is a string
+ *@src: this is a string
+ *@n: n is an integer
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+int a;
+for (a = 0; a < n && dest[a] != '\0'; a++)
+{
+dest[a] = src[a];
+}
+for (; a < n; a++)
+{
+dest[a] = '\0';
+}
+return (dest);
+}
