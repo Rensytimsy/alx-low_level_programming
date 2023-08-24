@@ -1,22 +1,18 @@
 #include "main.h"
-#include <stdio.h>
 /**
- *_strncpy - this is the main function
- *@dest: this is a string
- *@src: this is a string
- *@n: n is an integer
- * Return: the copied strings
+ * _strncpy - concatenate strings, defining the size of second string.
+ * @dest: string with concatenation
+ * @src: string to be concatenated
+ * @n: size of second string
+ * Return: Always 0.
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-int a;
-for (a = 0; a < n && dest[a] != '\0'; a++)
-{
-dest[a] = src[a];
-}
-for (; a < n; a++)
-{
-dest[a] = '\0';
-}
-return (dest);
+	int i;
+
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		*(dest + i) = *(src + i);
+	for ( ; i < n; i++)
+		*(dest + i) = '\0';
+	return (dest);
 }
