@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strstr - main function
+ *_strstr - main function
  *@haystack: a param
  *@needle: a param
- *Return : 0 (Success)
+ *Return: pointer to the first string
  */
 
 char *_strstr(char *haystack, char *needle)
