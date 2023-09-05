@@ -1,0 +1,26 @@
+#include "main.h"
+#include<stdlib.h>
+/**
+ *create_array - is the main function
+ *@size: is a unsigned integer value
+ *@c: c is a character
+ *Return: ptr
+ */
+char *create_array(unsigned int size, char c)
+{
+char *ptr;
+unsigned int a;
+ptr = malloc(size * sizeof(*ptr));
+if (size == 0)
+return (0);
+if (ptr == NULL)
+return (NULL);
+else
+a = 0;
+while (a < size)
+{
+ptr[a] = c;
+a++;
+}
+return (ptr);
+}
