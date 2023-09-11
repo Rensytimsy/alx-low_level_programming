@@ -1,5 +1,5 @@
-#ifndef PI_H
-#define PI_H
+#ifndef MACRO_H
+#define MACRO_H
 /**
  *1-pi.h - is the file name
  * @PI: is our pi definatio
