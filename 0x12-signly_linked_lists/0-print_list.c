@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  * print_list - is the main function and takes one const parameter.
  * @h: is a node passed;
