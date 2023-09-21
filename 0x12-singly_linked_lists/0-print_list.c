@@ -8,7 +8,7 @@ size_t print_list(const list_t *h)
 {
 size_t l = 0;
 /*Should return number of nodes*/
-while (h != NULL)
+while (h)
 {
 if (!h->str)
 printf("[0] (nill)\n");
