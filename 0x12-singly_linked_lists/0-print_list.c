@@ -10,7 +10,7 @@ size_t l = 0;
 /*Should return number of nodes*/
 while (h != NULL)
 {
-if (h->str == NULL)
+if (!h->str)
 printf("[0] (nill)\n");
 else
 printf("[%u] %s\n", h->len, h->str);
