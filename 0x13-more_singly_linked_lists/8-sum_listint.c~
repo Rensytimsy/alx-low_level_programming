@@ -1,0 +1,25 @@
+#include "lists.h"
+/**
+ *
+*/
+void sumNodes(listint_t *head, int *sum)
+{
+  int n;
+  if(!head)
+    return;
+  n = head->n;
+  sumNodes(head->next, sum);
+  *sum = *sum + n;
+}
+
+
+int sum_listint(listint_t *head)
+{
+  int sumOfNodes = 0;
+  while(head)
+  {
+    sumNodes(head, &sumOfNodes);
+    return (sumOfNodes);
+  }
+  return (0);
+}
