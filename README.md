@@ -1,1 +1,1 @@
-This is a readme file for alx-low_level_programming
+This is a readme file for alx-low_level_programming.git directory
