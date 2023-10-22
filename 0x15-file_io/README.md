@@ -1,1 +1,0 @@
-POSIX and file descriptor
