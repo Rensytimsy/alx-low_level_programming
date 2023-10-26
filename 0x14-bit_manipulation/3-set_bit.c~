@@ -1,0 +1,16 @@
+#include "main.h"
+/**
+ * set_bit - function takes two args n and index
+ *@n: binary number
+ *@index: bit position
+ *Return: success 
+*/
+int set_bit(unsigned long int *n, unsigned int index)
+{
+unsigned int q;
+if (index > 63)
+return (-1);
+q = 1 << index;
+*n = (*n | q);
+return (1);
+}
